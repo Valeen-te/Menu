@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    color: #252850;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.subrayado {
+    margin: 1rem auto 1rem auto;
+    height: 5px;
+    background-color: #cda434;
+    width: 8rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+h4 {
+    font-size: 0.875rem;
+}
+
+body{
+    background-color: aliceblue;
+    height: 100vh;
+}
+
+.titulo {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.btn-contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.filtro-btn {
+    color: #cda434;
+    border: solid 2px #cda434;
+    padding: 2px 5px;
+    margin: 0 3px;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    text-transform: capitalize;
+}
+
+.filtro-btn:hover {
+    background-color: #cda434;
+    color: white;
+}
+
+.seccion-central {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5rem;
+    gap: 2rem;
+}
+
+.elemento-menu {
+    margin: 0 auto;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.foto{
+    max-width: 250px;
+    border-radius: 10px;
+    border: solid 3px #cda434;
+}
+
+header {
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 0.5px #3b83bd;
+    padding-bottom: 10px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.precio {
+    color: #cda434;
+}
+
+p {
+    color: #3b83bd;
+}
+
+@media screen and (max-width:1400px) {
+    .elemento-menu {
+        flex-direction: column;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .seccion-central {
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+}
