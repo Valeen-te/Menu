@@ -52,13 +52,14 @@ body{
 .btn-contenedor {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.3rem;
 }
 
 .filtro-btn {
     color: #cda434;
     border: solid 2px #cda434;
     padding: 2px 5px;
-    margin: 0 3px;
     border-radius: 8px;
     background-color: transparent;
     cursor: pointer;
